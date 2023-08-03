@@ -1,0 +1,13 @@
+<template>
+    <h1>Teste</h1>
+</template>
+
+<script lang="ts">
+import { defineComponent } from 'vue'
+export default defineComponent({
+  name: 'Projetos-componente',
+})
+</script>
+
+<style>
+</style>
