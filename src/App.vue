@@ -5,9 +5,12 @@
     </div>
     <div class="column is-three-quarter">
       <Formulario @salvarTarefa="salvarTarefa"/>
-      <div class="lista">
+      <div v-if="tarefas.length > 0" class="lista">
         <Tarefas v-for="(tarefa, index) in tarefas" :key="index" :tarefa="tarefa"/>
       </div>
+      <Box v-if="tarefas.length < 1">
+        Você ainda não possui tarefas
+      </Box>
     </div>
   </main>
 </template>
@@ -18,12 +21,14 @@ import BarraLateral from "./components/barraLateral.vue";
 import Formulario from "./components/formulario.vue";
 import Tarefas from "./components/tarefas.vue";
 import ITarefas from "./interfaces/tarefas.interface";
+import Box from "./components/box.vue";
 export default defineComponent({
   name: "App",
   components: {
     BarraLateral,
     Formulario,
     Tarefas,
+    Box
   },
   data() {
     return {
