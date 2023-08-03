@@ -1,9 +1,9 @@
 <template>
 	<header>
 		<div class="has-text-centered"><img src="../assets/logo.png" alt="imagem vue" /></div>
-		<nav class="panel mt-5">
+		<nav class="mt-5">
 			<ul class="has-text-centered">
-				<li class="">
+				<li>
 					<router-link to="/">
 						<i class="fas fa-tasks"> </i>
 						Tarefas
@@ -41,14 +41,14 @@ header {
 		height: auto;
 	}
 }
-.panel li {
-	margin: 8px 0;
+li {
+	margin: 10px;
 }
 .link {
 	color: #fff;
 }
 .link:hover {
-	color: #faf0ca;
+	color: rgb(2, 34, 34);
 }
 .link.router-link-active {
 	color: #faf0ca;
