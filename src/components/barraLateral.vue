@@ -1,13 +1,13 @@
 <template>
   <header>
-    <h1><img src="../assets/logo.png" alt="imagem vue" /></h1>
+    <div class="has-text-centered"> <img  src="../assets/logo.png" alt="imagem vue" /></div>
   </header>
 </template>
 
 <script lang="ts">
 import { defineComponent } from "vue";
 export default defineComponent ({
-    name: "BarraLateral",
+    name: "Barra-lateral-componente",
     components: {},
 })
 </script>
@@ -16,7 +16,7 @@ export default defineComponent ({
 <style scoped>
 header {
   padding: 1rem;
-  background: #0d3b66;
+  background:  rgb(43, 179, 179);
   width: 100%;
   height: 100vh;
 }

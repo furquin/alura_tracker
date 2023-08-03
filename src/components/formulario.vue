@@ -10,7 +10,7 @@
         />
       </div>
       <div class="column">
-        <temporizador @tarefa_finalizada="FinalizarTarefa" />
+        <Temporizador @tarefa_finalizada="FinalizarTarefa" />
       </div>
     </div>
   </div>
@@ -18,9 +18,9 @@
 
 <script lang="ts">
 import { defineComponent } from "vue";
-import temporizador from "./temporizado.vue";
+import Temporizador from "./temporizado.vue";
 export default defineComponent({
-  name: "Formulario-tasks",
+  name: "Formulario-componente",
 
   data() {
     return {
@@ -29,7 +29,7 @@ export default defineComponent({
   },
   emits: ["salvarTarefa"],
   components: {
-    temporizador,
+    Temporizador,
   },
   methods: {
     FinalizarTarefa(segundos: number): void {
@@ -42,5 +42,3 @@ export default defineComponent({
   },
 });
 </script>
-
-<style scoped></style>
